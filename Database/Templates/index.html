@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Database</title>
+</head>
+<body>
+    <h1>Users List</h1>
+    
+    <a href="{{ url_for('add_user') }}">Add New User</a>
+    <a href="{{ url_for('delete_user') }}">Delete User</a>
+    
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+        </tr>
+        {% endfor %}
+        {%for user in users%}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{user.name}}</td>
+            <form action="/delete_user/{user.id}" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
