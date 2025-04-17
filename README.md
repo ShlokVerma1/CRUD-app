@@ -1,7 +1,3 @@
-Here's a sample README file you can use for your GitHub project:
-
----
-
 # CRUD App with Flask, SQLAlchemy, HTML, and Jinja
 
 This is a simple CRUD (Create, Read, Update, Delete) web application built using Python, Flask, SQLAlchemy, HTML, and Jinja. It allows users to interact with a database, perform CRUD operations, and view the changes in the web interface.
@@ -108,7 +104,3 @@ Feel free to fork the repository and submit pull requests for any changes or imp
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can personalize the sections like "Contributing" and "License" based on your actual project setup. Let me know if you need any more adjustments!
